@@ -1,4 +1,4 @@
-## MADE FOR LUAU, NOT LUA.
+> ALL FILES WITH THE .LUA EXTENSTION ARE MADE FOR LUAU, NOT LUA.
 
 # useless-shit
 A completely useless and overall bullshit library for random stuff I make when bored.
