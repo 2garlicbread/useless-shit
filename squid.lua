@@ -2,13 +2,14 @@
 
     squid.lua
 
-    Checks if a string is a mispelling/variation of the word 'squid'. 
+    Checks if a string is a variation of the word 'squid'. 
 
     @   2garlicbread
     #   13.04.2024
     /   https://github.com/2garlicbread/useless-shit/squid.lua
 
 ]]--   
+
 return function isSquid(word: string): boolean
     if word == "squid" then
         return true
@@ -254,6 +255,9 @@ return function isSquid(word: string): boolean
         return true
     end
     if word == "squid8" then
+        return true
+    end
+    if word == "squidward" then
         return true
     end
   
