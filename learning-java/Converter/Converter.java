@@ -22,7 +22,7 @@ public class Converter {
                 break;
 
             default:
-                System.out.println(params[0] + " is not a valid command.");
+                System.out.println("'" + params[0] + "'" + " is not a valid command.");
                 break;
         }
     }
