@@ -1,8 +1,10 @@
 /*
 
+    Simple command line application for converting things. Currently only does temperature (C/F).
+
     @   2garlicbread
-    #   Simple command line application for converting things. Currently only converts Fahrenheit to Celcius.
-    /   https://github.com/2garlicbread/useless-shit/blob/main/learning-java/Converter/src/Converter.java
+    #   26.04.2024
+    /   https://github.com/2garlicbread/useless-shit/blob/main/learning-java/Converter/Converter.java
 
  */
 
