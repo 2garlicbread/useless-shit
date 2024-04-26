@@ -26,7 +26,7 @@ public class Converter {
 
         switch (params[0]) {
             case "-fc":
-                fahrenheitToCelcius(newParams);
+                fahrenheitToCelsius(newParams);
                 break;
 
             case "-h":
@@ -34,7 +34,7 @@ public class Converter {
                 break;
 
             case "-cf":
-                celciusToFahrenheit(newParams);
+                celsiusToFahrenheit(newParams);
                 break;
 
             default:
@@ -43,7 +43,7 @@ public class Converter {
         }
     }
 
-    public static void celciusToFahrenheit(String[] numbers) {
+    public static void celsiusToFahrenheit(String[] numbers) {
         float[] newNumbers = stringsToFloats(numbers);
 
         for (float number : newNumbers) {
@@ -51,7 +51,7 @@ public class Converter {
         }
     }
 
-    public static void fahrenheitToCelcius(String[] numbers) {
+    public static void fahrenheitToCelsius(String[] numbers) {
         float[] newNumbers = stringsToFloats(numbers);
 
         for (float number : newNumbers) {
@@ -87,7 +87,7 @@ public class Converter {
     public static void help() {
         System.out.print("""
             -h         |    Help.
-            -f float[] |    Fahrenheit to Celcius.
+            -f float[] |    Fahrenheit to Celsius.
         \n""");
     }
 }
