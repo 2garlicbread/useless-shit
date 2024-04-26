@@ -1,10 +1,18 @@
 /*
 
-    Simple command line application for converting things. Currently only does temperature (C/F).
+    Simple command line application for converting things.
 
     @   2garlicbread
     #   26.04.2024
-    /   https://github.com/2garlicbread/useless-shit/blob/main/learning-java/Converter/Converter.java
+    /   https://github.com/2garlicbread/useless-shit/blob/main/learning-java/Converter/src/Converter.java
+
+
+    TODO:
+        Double check everything works as intended,
+        °C to K,
+        °F to K,
+        K to °C,
+        K to °F
 
  */
 
@@ -17,7 +25,7 @@ public class Converter {
         String[] newParams = removeFirstElement(params);
 
         switch (params[0]) {
-            case "-f":
+            case "-fc":
                 fahrenheitToCelcius(newParams);
                 break;
 
@@ -25,7 +33,7 @@ public class Converter {
                 help();
                 break;
 
-            case "-c":
+            case "-cf":
                 celciusToFahrenheit(newParams);
                 break;
 
@@ -39,7 +47,7 @@ public class Converter {
         float[] newNumbers = stringsToFloats(numbers);
 
         for (float number : newNumbers) {
-            System.out.println((number + 32) * 9 / 5);
+            System.out.println(number * 9 / 5 + 32);
         }
     }
 
@@ -47,7 +55,7 @@ public class Converter {
         float[] newNumbers = stringsToFloats(numbers);
 
         for (float number : newNumbers) {
-            System.out.println((number - 32) * 5 / 9);
+            System.out.println(number * 5 / 9 - 32);
         }
     }
 
