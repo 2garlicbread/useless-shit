@@ -47,7 +47,7 @@ public class Converter {
         float[] newNumbers = stringsToFloats(numbers);
 
         for (float number : newNumbers) {
-            System.out.println(number * 9 / 5 + 32);
+            System.out.println((number * 9 / 5) + 32);
         }
     }
 
@@ -55,7 +55,7 @@ public class Converter {
         float[] newNumbers = stringsToFloats(numbers);
 
         for (float number : newNumbers) {
-            System.out.println(number * 5 / 9 - 32);
+            System.out.println((number - 32) * 5 / 9);
         }
     }
 
