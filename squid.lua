@@ -10,7 +10,7 @@
 
 ]]--   
 
-return function isSquid(word: string): boolean
+return function(word: string): boolean
     if word == "squid" then
         return true
     end
